@@ -5,7 +5,7 @@ import java.util.List;
 
 
 public class Order {
-    private List<Product> cart = new ArrayList<>();
+    private final List<Product> cart = new ArrayList<>();
 
     public void addToCart(Product product) {
         cart.add(product);

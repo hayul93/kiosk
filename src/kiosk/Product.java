@@ -1,7 +1,7 @@
 package kiosk;
 
 public class Product extends Menu {
-    private double price;
+    private final double price;
 
     public Product(String name, double price, String description) {
         super(name, description);

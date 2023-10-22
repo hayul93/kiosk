@@ -88,27 +88,13 @@ public class Main {
             int choice = scanner.nextInt();
 
             switch (choice) {
-                case 1:
-                    displayProductMenu(coffeesMenu, scanner, order);
-                    break;
-                case 2:
-                    displayProductMenu(teasMenu, scanner, order);
-                    break;
-                case 3:
-                    displayProductMenu(dessertsMenu, scanner, order);
-                    break;
-                case 4:
-                    displayProductMenu(miniSnacksMenu, scanner, order);
-                    break;
-                case 5:
-                    displayOrderScreen(order, scanner);
-                    break;
-                case 6:
-                    displayCancelScreen(order, scanner);
-                    break;
-                default:
-                    System.out.println("올바른 메뉴를 선택해주세요.");
-                    break;
+                case 1 -> displayProductMenu(coffeesMenu, scanner, order);
+                case 2 -> displayProductMenu(teasMenu, scanner, order);
+                case 3 -> displayProductMenu(dessertsMenu, scanner, order);
+                case 4 -> displayProductMenu(miniSnacksMenu, scanner, order);
+                case 5 -> displayOrderScreen(order, scanner);
+                case 6 -> displayCancelScreen(order, scanner);
+                default -> System.out.println("올바른 메뉴를 선택해주세요.");
             }
         }
     }
